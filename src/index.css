@@ -1,0 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  /* background-color: red; */
+  width: 100%; /* Ensures it spans the full width without extra space */
+  min-height: 100vh; /* Makes sure body takes the full viewport height */
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}

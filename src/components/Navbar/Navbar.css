@@ -1,0 +1,120 @@
+/* Base Styles */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 87px;
+    /* background-color: pink; */
+}
+
+.navbar-icon {
+    display: none;
+
+}
+
+.menu-btn-container {
+    display: flex;
+    width: 65%;
+}
+
+.navbar-menus {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+
+    li{
+        /* width: 51px; */
+        height: 25px;
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+        font-size: 18px;
+        font-weight: 700;
+        color:#1A1A1A;
+
+        &:hover{
+            color:blue;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}
+
+.navbar-btns {
+    margin-left: auto;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        width: 101px;
+        height: 50px;
+        border-radius: 52px;
+        background-color: #101010;
+        color:white;
+        font-size: 15px;
+        font-weight: 700;
+
+        &:hover{
+            color:black;
+            background-color: white;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}
+
+.navbar-logo img {
+    width: 222px;
+    height: 61px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar-icon .hamicon{
+    /* color:red; */
+    /* height: 50px; */
+    /* background-color: black; */
+    font-size: 30px;
+
+}
+/* Mobile View */
+@media (max-width: 768px) {
+    .navbar-icon {
+        display: block; /* Show hamburger icon on mobile */
+        cursor: pointer;
+    }
+
+    .menu-btn-container {
+        position: absolute;
+        top: 60px; /* Adjust position to appear below navbar */
+        left: 0;
+        width: 100%;
+        display: none; /* Hide by default */
+        flex-direction: column; /* Display in column direction */
+        align-items: center;
+        background-color: white; /* Optional background */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        z-index: 10;
+    }
+
+    .menu-btn-container.active {
+        display: flex; /* Show menu container when active */
+    }
+
+    .navbar-menus {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-btns {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        left:25px;
+    }
+}

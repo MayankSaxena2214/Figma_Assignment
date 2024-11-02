@@ -1,0 +1,68 @@
+.expertcall-container{
+    background: url("../../assets/expertcall.jpg");
+    background-size: cover;
+    background-position:right;
+    height: 518px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+.expertcall-container .heading{
+    font-size: 90px;
+    color:white;
+    width: 60%;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.expertcall-container button{
+    width: 250px;
+    height: 55px;
+    background-color: white;
+    color:black;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 52px;
+    padding: 5px;
+
+    &:hover{
+        background-color: black;
+        color:white;
+    }
+}
+@media(max-width:768px){
+    .expertcall-container{
+        background: url("../../assets/expertcall.jpg");
+        background-size: cover;
+        background-position:right;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* width: 80%; */
+    }
+    .expertcall-container .heading{
+        font-size: 30px;
+        color:white;
+        width: 60%;
+        text-align: center;
+        font-weight: 700;
+        line-height: normal;
+        
+    }
+    .expertcall-container button{
+        width: 240px;
+        height: 55px;
+        background-color: white;
+        color:black;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 52px;
+        padding: 5px;
+    }
+}

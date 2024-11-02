@@ -1,0 +1,131 @@
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    border-radius: 32px;
+    /* background-color: greenyellow; */
+    transition: all 0.3s ease; /* Smooth transition for the entire container */
+}
+
+.home-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 423px;
+
+    .home-content-heading {
+        color: #282828;
+        font-weight: 700;
+        font-size: 69px;
+        margin-bottom: 30px;
+        font-family: 'Manrope', sans-serif;
+        opacity: 0; /* Initial opacity for fade-in effect */
+        animation: fadeIn 0.5s forwards; /* Apply fade-in animation */
+    }
+
+    .home-content-text {
+        width: 683px;
+        height: 116px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #656D78;
+        margin-bottom: 30px;
+        span {
+            color: #1E1E1E;
+            font-weight: bold;
+        }
+        opacity: 0; /* Initial opacity for fade-in effect */
+        animation: fadeIn 0.5s forwards; /* Apply fade-in animation */
+    }
+}
+
+.home-content-button {
+    button {
+        height: 64px;
+        width: 191px;
+        border-radius: 52px;
+        color: white;
+        background-color: black;
+        font-size: 20px;
+        font-weight: 700;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+        
+        &:hover{
+            color:black;
+            background-color: white;
+        }
+    }
+}
+
+.home-img {
+    width: 467px;
+    height: 423px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for image hover effect */
+    
+    img {
+        height: 423px;
+        width: 467px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 21px;
+    }
+}
+
+.home-img:hover {
+    transform: scale(1.05); /* Zoom-in effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow depth on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        border-radius: 32px;
+    }
+
+    .home-content-container {
+        align-items: center;
+        height: auto;
+        margin-bottom: 30px;
+
+        .home-content-heading {
+            width: 80%;
+            text-align: center;
+            margin-left: 20px;
+        }
+
+        .home-content-text {
+            height: 116px;
+            font-size: 15px;
+            padding: 10px;
+            width: 80%;
+        }
+    }
+
+    .home-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            width: 70%;
+        }
+    }
+
+    .home-content-button {
+        button {
+            margin-top: 20px;
+        }
+    }
+}

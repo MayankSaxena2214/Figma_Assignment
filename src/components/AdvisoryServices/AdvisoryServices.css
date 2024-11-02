@@ -1,0 +1,29 @@
+.advisory-services-container{
+    background-color: #F5F4FE;
+    padding-top: 80px;
+    font-weight: 700;
+    display: flex;
+    /* align-items: center; */
+    justify-content: start;
+    gap:80px;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-bottom: 100px;
+    /* background-color: orange; */
+}
+.advisory-services-container .advisory-heading{
+    font-size: 64px;
+    width: 70%;
+    margin-left: 40px;
+
+    @media(max-width: 768px){
+        font-size: 36px;
+        text-align: center;
+    }
+}
+.advisory-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content:space-evenly;
+}
