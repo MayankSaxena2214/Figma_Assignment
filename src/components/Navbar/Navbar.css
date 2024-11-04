@@ -34,6 +34,7 @@
             color:blue;
             transform: scale(1.2);
             cursor: pointer;
+            border-bottom: 2px solid blue;
         }
     }
 }
